@@ -2,10 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contest</title>
+    <link rel="stylesheet" href="css/Enroll_Page.css">
 </head>
-<body>
-    
+<body id="body">
+    <h1 id="h1">join us</h1>
+    <center>
+        <img src="img/contest.png" id="icpcLogo">
+    </center>
+
+    <center>
+        <div id="fram">
+            <b><p id="para1">Let's build the future</p></b>
+            <form id="UserData">
+                <input type="text" id="inputs" placeholder="Enter your userName"><br>
+                <input type="text" id="inputs" placeholder="PUA ID"><br>
+                <input type="email" id="inputs" placeholder="Icpc@gmail.com"><br>
+                <input type="password" id="inputs" placeholder="Enter password"><br>
+                <div id="coatchs">
+                    <p style="color: white;">choose your coach:</p>
+                <select name="coatchs">
+                    <option>Khaled Gohnem</option>
+                    <option>Ahmed Ghanem</option>
+                    <option>Mostafa halawa</option>
+                    <option>Anas goma</option>
+                    <option>Ibrahim Abdelrahman</option>
+                </select> 
+                </div>
+                <button type="button" id="button1">Submit</button>
+            </form
+        </div>
+    </center>
 </body>
 </html>

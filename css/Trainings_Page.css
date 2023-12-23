@@ -1,0 +1,45 @@
+#container{
+    width: 750px;
+    height: 400px;
+    background-color: rgb(230, 227, 227);
+    border-radius: 22px;
+    box-shadow: 0 20px 40px #828282;
+}
+
+#backgroundCard{
+    height: 280px;
+    width: 750px;
+    background-color: #1363C6;
+    border-top-right-radius: 22px;
+    border-top-left-radius: 22px;
+}
+#discrebtion{
+    color: white;
+    padding: 150px;
+    font-size: 24px;
+}
+#help{
+    display: flex;
+    align-items: center;
+    margin-left: 250px;
+    margin-top: 30px;
+    color: white;
+    font-size: large;
+}
+#button{
+    height: 30px;
+    width: 180px;
+    border-radius: 16px;
+    margin-left: 15px;
+    color: white;
+    background-color: #1363C6;
+}
+#lesson{
+    background-color: #1363C6;
+    height: 50px;
+    width: 70px;
+}
+#ss{
+    font-size: 30px;
+    color: black;
+}
