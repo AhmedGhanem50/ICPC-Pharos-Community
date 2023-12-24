@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/Enroll_Page.css">
 </head>
 
-<body id="body">
+<body>
     <h1 id="h1">join us</h1>
     <center>
         <img src="img/contest.png" id="icpcLogo">
