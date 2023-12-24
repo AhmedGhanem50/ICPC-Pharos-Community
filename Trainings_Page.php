@@ -1,77 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Level one</title>
     <link rel="stylesheet" href="css/Trainings_Page.css">
 </head>
-<body>
-    <center>
-        <strong>
-            <p id="ss">
-                Icpc Trainings levels 
-            </p>
-        </strong>    
-    </center>
-    <br>
-    <br>
-    <br>
-    <center>
-        <div id="container">
-            <div id="backgroundCard">
-                <center>
-                    <p id="discrebtion">
-                        <strong>
-                            problem solving training level one
-                        </strong>
-                    </p>
-                </center>
+
+<body class="TP_Body">
+    <div class="TP_Tiltle">
+        ICPC Trainings levels
+    </div>
+    <div class="TP_Page">
+        <div class="TP_Card">
+            <div class="TP_Card_Upper">
+                <p class="TP_Card_Title">
+                    problem solving training level one
+                </p>
             </div>
-                <div id="help">    
-                    <p id="lesson">149 lesson</p>
-                    <a href="contest.html" target="_blank"><button type="submit" id="button">Join</button></a>
-                </div>
-            
-        </div>
-    </center>
-    <br>
-    <br>
-    <center>
-        <div id="container">
-            <div id="backgroundCard">
-                <center>
-                    <p id="discrebtion">
-                        <strong>
-                            problem solving training level two
-                        </strong>
-                    </p>
-                </center>
+            <div class="TP_Card_Lower">
+                <span class="TP_Card_Info">
+                    <span class="TP_Card_Topics">
+                        <p>Topics</p>
+                        9999
+                    </span>
+                    <span class="TP_Card_Problems">
+                        <p>Problems</p>
+                        9999
+                    </span>
+                </span>
+                <span class="TP_Card_Enroll">
+                    <a href="contest.html" target="_blank" class="TP_Card_Button">
+                        <button type="submit" class="TP_Card_Button">Join</button>
+                    </a>
+                </span>
             </div>
-                <div id="help">    
-                    <p id="lesson">120 lesson</p>
-                    <a href="contest.html" target="_blank"><button type="submit" id="button">Join</button></a>
-                </div>
-            
         </div>
-    </center>
-    <br>
-    <center>
-        <div id="container">
-            <div id="backgroundCard">
-                <center>
-                    <p id="discrebtion">
-                        <strong>
-                            problem solving training level three
-                        </strong>
-                    </p>
-                </center>
-            </div>
-                <div id="help">    
-                    <p id="lesson">130 lesson</p>
-                    <a href="contest.html" target="_blank"><button type="submit" id="button">Join</button></a>
-                </div>
-            
-        </div>
-    </center>
+    </div>
+
 </body>
+
 </html>
