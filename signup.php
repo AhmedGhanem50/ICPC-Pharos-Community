@@ -1,3 +1,7 @@
+<?php
+require_once "includes/config_session.inc.php";
+require_once "includes/signup_view.inc.php";
+?>
 <!-- The HTML document structure -->
 <!DOCTYPE html>
 <html lang="en">
@@ -26,16 +30,16 @@
             <h2 id="title">Sign Up</h2>
             <p id="sentance-coding">Coding is not a skill, it’s a mindset</p>
             <!-- Sign-up form -->
-            <form class="signup-form">
+            <form class="signup-form" action="includes/signup.inc.php" method="post">
                 <!-- Input fields for username, email, and password -->
                 <div class="input-field">
-                    <input type="text" placeholder="Username">
+                    <input type="text" name="username" placeholder="Username">
                 </div>
                 <div class="input-field">
-                    <input type="email" placeholder="email@gmail.com">
+                    <input type="email" name="email" placeholder="email@gmail.com">
                 </div>
                 <div class="input-field">
-                    <input type="password" placeholder="Password">
+                    <input type="password" name="pwd" placeholder="Password">
                 </div>
                 <!-- Sign-up button -->
                 <button type="submit" class="signup-button">Sign Up</button>
@@ -45,6 +49,7 @@
                 <strong>Do you have an account?</strong>
                 <a class="link-hover" href="Log_in.php">Login</a>
             </p>
+            <?php check_sigup_errors(); ?>
         </div>
     </div>
 

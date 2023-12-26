@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-function is_username_wrong(bool|array $result): bool
+function is_email_wrong(bool|array $result): bool
 {
     if (!$result) {
         return true;

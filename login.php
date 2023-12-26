@@ -1,3 +1,7 @@
+<?php
+require_once "includes/config_session.inc.php";
+require_once "includes/login_view.inc.php";
+?>
 <!-- Similar structure as the Sign Up page with modifications for login -->
 <!DOCTYPE html>
 <html lang="en">
@@ -18,21 +22,22 @@
         <div class="signup-content">
             <h2 id="title">Log In</h2>
             <p id="sentance-coding">Coding is not a skill, it’s a mindset</p>
-            <form class="signup-form">
+            <form class="signup-form" action="includes/login.inc.php" method="post">
                 <div class="input-field">
-                    <input type="email" placeholder="email@gmail.com">
+                    <input type="email" name="email" placeholder="email@gmail.com">
                 </div>
                 <div class="input-field">
-                    <input type="password" placeholder="Password">
+                    <input type="password" name="pwd" placeholder="Password">
                 </div>
                 <button type="submit" class="signup-button">LOGIN</button>
             </form>
             <p class="login-link">
                 <strong>Don’t have an account? </strong>
-                <a class="link-hover" href="Sign_In.php">
+                <a class="link-hover" href="signup.php">
                     Register
                 </a>
             </p>
+            <?php check_login_errors(); ?>
         </div>
     </div>
 

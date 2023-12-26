@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         if ($errors) {
             $_SESSION["errors_signup"] = $errors;
-            // to save the wrong data forthe user to edit
+            // to save the wrong data for the user to edit
             $signupData = [
                 "username" => $username,
                 "email" => $email,

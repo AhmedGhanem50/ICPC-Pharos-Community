@@ -6,12 +6,12 @@ function check_sigup_errors()
         $errors = $_SESSION['errors_signup'];
         echo "<br>";
         foreach ($errors as $error) {
-            echo '<p class="form-error">' . $error . "</p>";
+            echo '<p style="color:red;font-size:16px;">' . $error . "</p>";
         }
 
         unset($_SESSION['errors_signup']);
     } else if (isset($_GET['signup']) && $_GET['signup'] === "success") {
         echo "<br>";
-        echo '<p class="form-success">' . "Signup Success!" . "</p>";
+        echo '<p style="color:green;font-size:16px;">' . "Signup Success!" . "</p>";
     }
 }
