@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+
 let showButton = true;
 
 document.getElementById('log-in').addEventListener('click', function() {

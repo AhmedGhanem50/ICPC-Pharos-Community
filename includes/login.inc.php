@@ -33,10 +33,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         session_id($sessionId);
         $_SESSION["user_id"] = $result["id"];
         $_SESSION["user_username"] = htmlspecialchars($result["username"]);
+        $_SESSION["user_email"] = htmlspecialchars($result["email"]);
+        $_SESSION["user_pwd"] = htmlspecialchars($result["pwd"]);
+        $_SESSION["user_leetcode"] = htmlspecialchars($result["leetcode"]);
+        $_SESSION["user_codeforces"] = htmlspecialchars($result["codeforces"]);
+        $_SESSION["user_gender"] = htmlspecialchars($result["gender"]);
+        $_SESSION["user_puaid"] = htmlspecialchars($result["puaid"]);
+        $_SESSION["user_isadmin"] = $result["isadmin"];
         $_SESSION["last_regeneration"] = time();
 
         // empty your resources
-        header("Location: ../login.php?login=success");
+        header("Location: ../User_profile.php?login=success");
         $pdo = null;
         $stmt = null;
         die();
