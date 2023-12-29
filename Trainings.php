@@ -7,8 +7,8 @@ require("includes/trainings.inc.php");
 
 <head>
     <meta charset="UTF-8">
-    <title>Level one</title>
-    <link rel="stylesheet" href="css/Trainings_Page.css">
+    <title>Trainings_Page</title>
+    <link rel="stylesheet" href="css/trainings.css">
 </head>
 
 <body class="TP_Body">
