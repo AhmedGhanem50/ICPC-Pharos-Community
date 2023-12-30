@@ -9,6 +9,9 @@ require_once "includes/login_view.inc.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- essential links-->
+    <link rel="stylesheet" href="css\navbar.css">
+
     <title>LOGIN</title>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,6 +19,7 @@ require_once "includes/login_view.inc.php";
 </head>
 
 <body>
+    <?php require "navbar.php"; ?>
 
     <div class="signup-container">
         <img src="img/login_signup.png" alt="Image" class="signup-image">
@@ -29,7 +33,7 @@ require_once "includes/login_view.inc.php";
                 <div class="input-field">
                     <input type="password" name="pwd" placeholder="Password">
                 </div>
-                <button type="button" class="signup-button" id="log-in">LOGIN</button>
+                <button class="signup-button" id="log-in">LOGIN</button>
             </form>
             <p class="login-link">
                 <strong>Don’t have an account? </strong>

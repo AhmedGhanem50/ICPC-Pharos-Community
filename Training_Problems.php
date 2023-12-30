@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- essential links-->
+    <link rel="stylesheet" href="css\navbar.css">
     <title>Level one</title>
     <link rel="stylesheet" href="css/Training_Problems.css">
 </head>
 
 <body class="TPP_Body">
+    <?php require "navbar.php"; ?>
+
     <div class="TPP_Tiltle">
         -Training name- problems
     </div>

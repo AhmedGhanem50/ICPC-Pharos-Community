@@ -7,11 +7,17 @@ require("includes/trainings.inc.php");
 
 <head>
     <meta charset="UTF-8">
+    <!-- essential links-->
+    <link rel="stylesheet" href="css\navbar.css">
+
     <title>Trainings_Page</title>
     <link rel="stylesheet" href="css/trainings.css">
 </head>
 
 <body class="TP_Body">
+    <?php require "navbar.php"; ?>
+
+
     <div class="TP_Tiltle">
         ICPC Trainings
     </div>

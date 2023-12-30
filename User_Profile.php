@@ -18,6 +18,9 @@ require_once "includes/profile_view.inc.php";
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- essential links-->
+        <link rel="stylesheet" href="css\navbar.css">
+
         <title>Account Information</title>
         <link rel="stylesheet" href="css\User_Profile.css">
         <link rel="stylesheet" href="css\Navbar.css">
@@ -25,6 +28,8 @@ require_once "includes/profile_view.inc.php";
     </head>
 
     <body>
+        <?php require "navbar.php"; ?>
+
         <div class="container">
             <h1 class="UPP_title">Account Information</h1>
             <div class="account">

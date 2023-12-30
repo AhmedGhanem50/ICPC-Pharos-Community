@@ -10,6 +10,9 @@ require_once "includes/signup_view.inc.php";
     <!-- Meta information for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- essential links-->
+    <link rel="stylesheet" href="css\navbar.css">
+
     <!-- Title of the page -->
     <title>Sign Up</title>
     <!-- Link to Google Fonts and external stylesheet -->
@@ -19,7 +22,7 @@ require_once "includes/signup_view.inc.php";
 </head>
 
 <body>
-
+    <?php require "navbar.php"; ?>
     <!-- Container for the sign-up content -->
     <div class="signup-container">
         <!-- Image section -->
