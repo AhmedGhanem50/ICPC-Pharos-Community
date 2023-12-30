@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Admin Page</title>
-        <link rel="stylesheet" href="css\Admin.css" />
-        <script src="js\Admin.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Training</title>
+    <link rel="stylesheet" href="css\Admin.css" />
   </head>
   <body>
     <div class="AP_title">
-        <span class="AP_title_span">Admin Page</span>
+        <span class="AP_title_span">Admin Training </span>
       </div>
     <div class="container">
       <div class="card two-thirds">
@@ -19,43 +18,33 @@
               <form>
                 <input type="text" placeholder="Name" />
               </form>
-              
             </div>
-            <div class="col">
-              <form>
-                <input type="text" placeholder="Topics Number" />
-              </form>
-            </div>
+            
           </div>
           <div class="row">
+            
             <div class="col">
               <form>
-                <input type="text" placeholder="Problems Number" />
-              </form>
-              
-            </div>
-            <div class="col">
-              <form>
-                <input type="text" placeholder=" Topics" />
+                <input type="text" placeholder=" Link" />
               </form>
             </div>
-            <div class="col">
-                <form>
-                  <button>Done</button>
-                </form>
-            </div >
-          </div>
+        </div>
+        <div class="col">
+            <form>
+              <button>Done</button>
+            </form>
+        </div >
         </div>
         <div class="card-section">
           <div class="row">
             <div class="col">
               <form>
-                <input type="text" value="Training Name" readonly />
+                <input type="text" value="Problem Name" readonly />
               </form>
             </div>
             <div class="col">
-              <form>
-              <button type="button" onclick="redirectToPage()" >info</button>
+                <form>
+                  <button>Delete</button>
                 </form>
             </div>
           </div>
@@ -74,7 +63,7 @@
           <div class="row">
             <div class="col">
               <form>
-                <input type="text" value="Admin Name" readonly />
+                <input type="text" value="Student Name" readonly />
               </form>
             </div>
             <div class="col">

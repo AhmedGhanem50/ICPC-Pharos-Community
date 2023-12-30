@@ -29,7 +29,7 @@ require_once "includes/login_view.inc.php";
                 <div class="input-field">
                     <input type="password" name="pwd" placeholder="Password">
                 </div>
-                <button type="submit" class="signup-button" id="log-in">LOGIN</button>
+                <button type="button" class="signup-button" id="log-in">LOGIN</button>
             </form>
             <p class="login-link">
                 <strong>Don’t have an account? </strong>

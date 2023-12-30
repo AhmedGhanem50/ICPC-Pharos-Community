@@ -98,7 +98,7 @@ require_once "includes/profile_view.inc.php";
             </div>
             <div class="account">
                 <form>
-                    <button id="hiddenBtn">Hidden Button</button>
+                    <button type="button" id="hiddenBtn">Hidden Button</button>
                 </form>
             </div>
             <div class="account">
