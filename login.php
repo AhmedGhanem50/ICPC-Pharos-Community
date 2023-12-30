@@ -15,12 +15,12 @@ require_once "includes/login_view.inc.php";
     <title>LOGIN</title>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/Log_in_Sign-In.css">
+    <link rel="stylesheet" href="css/Log_in_Sign-In1.css">
 </head>
 
 <body>
     <?php require "navbar.php"; ?>
-
+ <div class="body-login-sigunup">
     <div class="signup-container">
         <img src="img/login_signup.png" alt="Image" class="signup-image">
         <div class="signup-content">
@@ -43,6 +43,7 @@ require_once "includes/login_view.inc.php";
             </p>
             <?php check_login_errors(); ?>
         </div>
+    </div>
     </div>
     <script src="js\User_Profile.js"></script>
 </body>
