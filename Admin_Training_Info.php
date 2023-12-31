@@ -17,9 +17,10 @@ require "includes/adminTraining_info.inc.php";
 
 <body>
     <?php require "navbar.php"; ?>
-
     <div class="AP_title">
-        <span class="AP_title_span">Admin Training </span>
+        <span class="AP_title_span">
+            <?php display_training_title() ?>
+        </span>
     </div>
     <div class="container">
         <div class="card two-thirds">
@@ -42,18 +43,9 @@ require "includes/adminTraining_info.inc.php";
                             <button name="add_problem_button">Add Problem</button>
                     </div>
                 </form>
+                <?php check_add_problem_errors() ?>
             </div>
             <div class="card-section">
-                <form action="includes/adminTraining_info.inc.php" method="post">
-                    <div class="row">
-                        <div class="col">
-                            <input name="deleted_problem_name" type="text" value="demo problem name" readonly />
-                        </div>
-                        <div class="col">
-                            <button name="delete_problem_button">Delete</button>
-                        </div>
-                    </div>
-                </form>
                 <?php display_training_problems(); ?>
             </div>
         </div>
@@ -63,18 +55,9 @@ require "includes/adminTraining_info.inc.php";
                     <input name="added_student_name" type="text" placeholder="Student Name" />
                     <button name="add_student_button">Add Student</button>
                 </form>
+                <?php check_add_student_errors() ?>
             </div>
             <div class="card-section">
-                <form action="includes/adminTraining_info.inc.php" method="post">
-                    <div class="row">
-                        <div class="col">
-                            <input name="kicked_student_name" type="text" value="Student Name" readonly />
-                        </div>
-                        <div class="col">
-                            <button name="kick_student_button">Kick</button>
-                        </div>
-                    </div>
-                </form>
                 <?php display_training_students(); ?>
 
             </div>

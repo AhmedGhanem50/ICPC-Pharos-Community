@@ -4,22 +4,21 @@ declare(strict_types=1);
 function training_title_card($training)
 {
     return '
-        <div class="row">
-            <div class="col">
-                <form>
-                    <input type="text" value="' . $training["title"] . '" readonly />
-                </form>
+        <form action="includes/admin.inc.php" method="post">
+            <div class="row">
+                <div class="col">
+                    <input name="managed_training_title" type="text" value="' . $training["title"] . '" readonly />
+                </div>
+                <div class="col">
+                    <button name="manage_training_button">manage</button>
+                </div>
             </div>
-            <div class="col">
-                <form>
-                    <button type="button" onclick="redirectToPage()">info</button>
-                </form>
-            </div>
-        </div>
+        </form>
     ';
 }
 function admin_name_card($admin)
 {
+
     return '
         <form action="includes/admin.inc.php" method="post">
             <div class="row">

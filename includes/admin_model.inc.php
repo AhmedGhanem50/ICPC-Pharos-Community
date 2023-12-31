@@ -38,7 +38,7 @@ function get_training_id($pdo, $training_title)
     $stmt->bindParam(":training_title", $training_title);
     $stmt->execute();
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
-    return $result;
+    return intval($result); ///////////////////////////// string 
 
 }
 function set_admin(object $pdo, string $email)

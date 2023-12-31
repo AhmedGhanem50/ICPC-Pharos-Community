@@ -48,16 +48,6 @@ require "includes/admin.inc.php";
                 </form>
             </div>
             <div class="card-section">
-                <form action="includes/admin.inc.php" method="post">
-                    <div class="row">
-                        <div class="col">
-                            <input name="managed_training_title" type="text" value="training name" readonly />
-                        </div>
-                        <div class="col">
-                            <button name="manage_training_button">manage</button>
-                        </div>
-                    </div>
-                </form>
                 <?php display_trainings_titles() ?>
             </div>
         </div>
