@@ -21,37 +21,27 @@
     <div class="container">
         <div class="card two-thirds">
             <div class="card-section">
-                <div class="row">
-                    <div class="col">
-                        <form>
-                            <input type="text" placeholder="Name" />
-                        </form>
-
+                <form action="includes/manage_trainings.inc.php" method="post">
+                    <div class="row">
+                        <div class="col">
+                            <input name="title" type="text" placeholder="Name" />
+                        </div>
+                        <div class="col">
+                            <input name="topics" type="text" placeholder="Topics Number" />
+                        </div>
                     </div>
-                    <div class="col">
-                        <form>
-                            <input type="text" placeholder="Topics Number" />
-                        </form>
+                    <div class="row">
+                        <div class="col">
+                            <input name="problems" type="text" placeholder="Problems Number" />
+                        </div>
+                        <div class="col">
+                            <input name="topics_titles" type="text" placeholder=" Topics" />
+                        </div>
+                        <div class="col">
+                            <button name="add_training_button">Add Training</button>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <form>
-                            <input type="text" placeholder="Problems Number" />
-                        </form>
-
-                    </div>
-                    <div class="col">
-                        <form>
-                            <input type="text" placeholder=" Topics" />
-                        </form>
-                    </div>
-                    <div class="col">
-                        <form>
-                            <button>Done</button>
-                        </form>
-                    </div>
-                </div>
+                </form>
             </div>
             <div class="card-section">
                 <div class="row">
@@ -70,11 +60,9 @@
         </div>
         <div class="card one-third">
             <div class="card-section">
-                <form>
-                    <input type="text" placeholder="Admin Email" />
-                </form>
-                <form>
-                    <button>Done</button>
+                <form action="includes/manage_trainings.inc.php" method="post">
+                    <input name="added_admin_email" type="text" placeholder="Admin Email" />
+                    <button name="add_admin_button">Make Admin</button>
                 </form>
             </div>
             <div class="card-section">
