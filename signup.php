@@ -18,11 +18,12 @@ require_once "includes/signup_view.inc.php";
     <!-- Link to Google Fonts and external stylesheet -->
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/Log_in_Sign-In.css">
+    <link rel="stylesheet" href="css/Log_in_Sign-In1.css">
 </head>
 
 <body>
     <?php require "navbar.php"; ?>
+    <div class="body-login-sigunup">
     <!-- Container for the sign-up content -->
     <div class="signup-container">
         <!-- Image section -->
@@ -54,6 +55,7 @@ require_once "includes/signup_view.inc.php";
             </p>
             <?php check_sigup_errors(); ?>
         </div>
+    </div>
     </div>
 
 </body>
