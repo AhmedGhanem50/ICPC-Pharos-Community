@@ -1,10 +1,20 @@
 <?php
-
+require_once "dbh.inc.php";
+require_once "admin_model.inc.php";
+require_once "admin_contr.inc.php";
+require_once "config_session.inc.php";
+try {
+    $_SESSION["all_trainings_titles"] = get_trainings_titles($pdo);
+} catch (PDOException $e) {
+    die("Query failed" . $e->getMessage());
+}
+try {
+    $_SESSION["all_admins_names"] = get_admins_names($pdo);
+} catch (PDOException $e) {
+    die("Query failed" . $e->getMessage());
+}
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    require_once "dbh.inc.php";
-    require_once "manage_trainings_model.inc.php";
-    require_once "manage_trainings_contr.inc.php";
-    require_once "config_session.inc.php";
+
     if (isset($_POST['add_training_button'])) {
         try {
             $title = $_POST['title'];
@@ -57,9 +67,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } catch (PDOException $e) {
             die("Query failed " . $e->getMessage());
         }
-    } else {
-        //no button pressed
+    } else if (isset($_POST['remove_admin_button'])) {
+        try {
+            $admin_email = $_POST["removed_admin_email"];
+            remove_admin($pdo, $admin_email);
+            // empty your resources
+            $pdo = null;
+            $stmt = null;
+            header("Location: ../Admin.php?removeadmin=success");
+            die();
+        } catch (PDOException $e) {
+            die("Query failed" . $e->getMessage());
+        }
+    } else if (isset($_POST['manage_training_button'])) {
+        try {
+            $training_title = $_POST["managed_training_title"];
+            $_SESSION["admin_training"]["id"] = get_training_id($pdo, $training_title);
+            $_SESSION["admin_training"]["title"] = $training_title;
+            // empty your resources
+            $pdo = null;
+            $stmt = null;
+            header("Location: ../Admin_Training_Info.php");
+            die();
+        } catch (PDOException $e) {
+            die("Query failed" . $e->getMessage());
+        }
     }
-} else {
-    header("Location: ../index.php");
 }

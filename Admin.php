@@ -1,3 +1,7 @@
+<?php
+require "includes/admin_view.inc.php";
+require "includes/admin.inc.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +25,7 @@
     <div class="container">
         <div class="card two-thirds">
             <div class="card-section">
-                <form action="includes/manage_trainings.inc.php" method="post">
+                <form action="includes/admin.inc.php" method="post">
                     <div class="row">
                         <div class="col">
                             <input name="title" type="text" placeholder="Name" />
@@ -44,41 +48,28 @@
                 </form>
             </div>
             <div class="card-section">
-                <div class="row">
-                    <div class="col">
-                        <form>
-                            <input type="text" value="Training Name" readonly />
-                        </form>
+                <form action="includes/admin.inc.php" method="post">
+                    <div class="row">
+                        <div class="col">
+                            <input name="managed_training_title" type="text" value="training name" readonly />
+                        </div>
+                        <div class="col">
+                            <button name="manage_training_button">manage</button>
+                        </div>
                     </div>
-                    <div class="col">
-                        <form>
-                            <button type="button" onclick="redirectToPage()">info</button>
-                        </form>
-                    </div>
-                </div>
+                </form>
+                <?php display_trainings_titles() ?>
             </div>
         </div>
         <div class="card one-third">
             <div class="card-section">
-                <form action="includes/manage_trainings.inc.php" method="post">
+                <form action="includes/admin.inc.php" method="post">
                     <input name="added_admin_email" type="text" placeholder="Admin Email" />
                     <button name="add_admin_button">Make Admin</button>
                 </form>
             </div>
             <div class="card-section">
-                <div class="row">
-                    <div class="col">
-                        <form>
-                            <input type="text" value="Admin Name" readonly />
-                        </form>
-                    </div>
-                    <div class="col">
-                        <form>
-                            <button>Delete</button>
-                        </form>
-                    </div>
-
-                </div>
+                <?php display_admins_names() ?>
             </div>
         </div>
     </div>

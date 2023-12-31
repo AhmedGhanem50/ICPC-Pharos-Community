@@ -31,10 +31,43 @@ function get_user(object $pdo, string $email)
     return $result;
 
 }
+function get_training_id($pdo, $training_title)
+{
+    $query = "SELECT id FROM trainings WHERE title = :training_title;";
+    $stmt = $pdo->prepare($query);
+    $stmt->bindParam(":training_title", $training_title);
+    $stmt->execute();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $result;
+
+}
 function set_admin(object $pdo, string $email)
 {
     $query = "UPDATE users SET isadmin = 1  WHERE  email=:email ;";
     $stmt = $pdo->prepare($query);
     $stmt->bindParam(":email", $email);
     $stmt->execute();
+}
+function remove_admin(object $pdo, string $email)
+{
+    $query = "UPDATE users SET isadmin = 0  WHERE  email=:email ;";
+    $stmt = $pdo->prepare($query);
+    $stmt->bindParam(":email", $email);
+    $stmt->execute();
+}
+function get_trainings_titles(object $pdo)
+{
+    $query = "SELECT title FROM trainings WHERE true;";
+    $stmt = $pdo->prepare($query);
+    $stmt->execute();
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
+}
+function get_admins_names(object $pdo)
+{
+    $query = "SELECT username,email FROM users WHERE isadmin=1;";
+    $stmt = $pdo->prepare($query);
+    $stmt->execute();
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
 }
