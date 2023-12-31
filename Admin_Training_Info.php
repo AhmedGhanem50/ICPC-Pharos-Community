@@ -10,6 +10,7 @@ require "includes/adminTraining_info.inc.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- essential links-->
     <link rel="stylesheet" href="css\navbar.css">
+    <link rel="stylesheet" href="css\Footer.css">
 
     <title>Admin Training</title>
     <link rel="stylesheet" href="css\Admin.css" />
@@ -63,6 +64,8 @@ require "includes/adminTraining_info.inc.php";
             </div>
         </div>
     </div>
+    <?php require "Footer.php" ?>
+
 </body>
 
 </html>

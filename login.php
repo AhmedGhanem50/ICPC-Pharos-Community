@@ -11,6 +11,7 @@ require_once "includes/login_view.inc.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- essential links-->
     <link rel="stylesheet" href="css\navbar.css">
+    <link rel="stylesheet" href="css\Footer.css">
 
     <title>LOGIN</title>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
@@ -20,31 +21,32 @@ require_once "includes/login_view.inc.php";
 
 <body>
     <?php require "navbar.php"; ?>
- <div class="body-login-sigunup">
-    <div class="signup-container">
-        <img src="img/login_signup.png" alt="Image" class="signup-image">
-        <div class="signup-content">
-            <h2 id="title">Log In</h2>
-            <p id="sentance-coding">Coding is not a skill, it’s a mindset</p>
-            <form class="signup-form" action="includes/login.inc.php" method="post">
-                <div class="input-field">
-                    <input type="email" name="email" placeholder="email@gmail.com">
-                </div>
-                <div class="input-field">
-                    <input type="password" name="pwd" placeholder="Password">
-                </div>
-                <button class="signup-button" id="log-in">LOGIN</button>
-            </form>
-            <p class="login-link">
-                <strong>Don’t have an account? </strong>
-                <a class="link-hover" href="signup.php">
-                    Register
-                </a>
-            </p>
-            <?php check_login_errors(); ?>
+    <div class="body-login-sigunup">
+        <div class="signup-container">
+            <img src="img/login_signup.png" alt="Image" class="signup-image">
+            <div class="signup-content">
+                <h2 id="title">Log In</h2>
+                <p id="sentance-coding">Coding is not a skill, it’s a mindset</p>
+                <form class="signup-form" action="includes/login.inc.php" method="post">
+                    <div class="input-field">
+                        <input type="email" name="email" placeholder="email@gmail.com">
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="pwd" placeholder="Password">
+                    </div>
+                    <button class="signup-button" id="log-in">LOGIN</button>
+                </form>
+                <p class="login-link">
+                    <strong>Don’t have an account? </strong>
+                    <a class="link-hover" href="signup.php">
+                        Register
+                    </a>
+                </p>
+                <?php check_login_errors(); ?>
+            </div>
         </div>
     </div>
-    </div>
+    <?php require "Footer.php" ?>
     <script src="js\User_Profile.js"></script>
 </body>
 

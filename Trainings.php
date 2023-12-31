@@ -9,6 +9,7 @@ require("includes/trainings.inc.php");
     <meta charset="UTF-8">
     <!-- essential links-->
     <link rel="stylesheet" href="css\navbar.css">
+    <link rel="stylesheet" href="css\Footer.css">
 
     <title>Trainings_Page</title>
     <link rel="stylesheet" href="css/trainings.css">
@@ -24,7 +25,7 @@ require("includes/trainings.inc.php");
     <div class="TP_Page">
         <?php display_trainings(); ?>
     </div>
-
+    <?php require "Footer.php" ?>
 </body>
 
 </html>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <!-- essential links-->
     <link rel="stylesheet" href="css\navbar.css">
+    <link rel="stylesheet" href="css\Footer.css">
     <title>Level one</title>
     <link rel="stylesheet" href="css/Training_Problems.css">
 </head>
@@ -38,7 +39,7 @@
             </a>
         </div>
     </div>
-
+    <?php require "Footer.php" ?>
 </body>
 
 </html>
