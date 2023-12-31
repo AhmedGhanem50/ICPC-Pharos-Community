@@ -22,7 +22,7 @@
                 <a href="User_Profile.php">My account</a>
             </li>
             <li>
-                <a href="Admin.php">Admin</a>
+                <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a>
             </li>
             <li>
                 <a href="login.php" class="active">Login</a>
@@ -31,3 +31,8 @@
     </div>
 </nav>
 <script src="js\Navbar.js"></script>
+<script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/39da319607.js" crossorigin="anonymous"></script>
