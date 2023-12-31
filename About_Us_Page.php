@@ -21,12 +21,12 @@
     <section id="about-section">
         <!-- about left  -->
         <div class="about-left">
-            <img class="image-marg" src="img/About_us.png" alt="About Img" />
+            <img class="image-marg" src="img/ICPC Logo no background.png" alt="About Img" />
         </div>
 
         <!-- about right  -->
         <div class="about-right">
-            <h4>My Story</h4>
+            <h4>My Story</h4><br>
             <h1>About Me</h1>
             <p>Welcome to the vibrant community of ICPC leaders! We are a dedicated group of computer science
                 enthusiasts currently navigating our third year in the field. Comprising five individuals with a shared
@@ -46,7 +46,7 @@
                         </span>
                         <p>Address</p>
                         <span class="saprater">:</span>
-                        <p>ALEX, Egypt</p>
+                        <p>pharos, ALEX</p>
                     </li>
                     <li>
                         <span class="address-logo">
