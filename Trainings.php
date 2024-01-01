@@ -12,7 +12,7 @@ require("includes/trainings.inc.php");
     <link rel="stylesheet" href="css\Footer.css">
 
     <title>Trainings_Page</title>
-    <link rel="stylesheet" href="css/trainings.css">
+    <link rel="stylesheet" href="css\Trainings.css">
 </head>
 
 <body class="TP_Body">

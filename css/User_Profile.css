@@ -96,8 +96,7 @@ body {
     display: none;
 }
 #hiddenBtn {
-    display: none;
-    background-color: #27ae60;
+    background-color: #ce1c05;
     color: #fff;
 }
 /* Media query for responsiveness */

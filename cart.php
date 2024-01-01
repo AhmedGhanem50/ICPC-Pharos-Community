@@ -1,3 +1,7 @@
+<?php
+require_once "includes/cart.inc.php";
+require_once "includes/cart_view.inc.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,50 +10,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- essential links-->
-    <link rel="stylesheet" href="css\navbar.css">
+    <link rel="stylesheet" href="css\Navbar.css">
     <link rel="stylesheet" href="css\Footer.css">
 
 
-    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/Cart.css">
     <title>Course Details</title>
 </head>
 
 <body>
     <?php require "navbar.php"; ?>
-    <div class="action-buttons">
-        <button>Delete All</button>
-        <button>Enroll</button>
-    </div>
-    <div class="course-details">
-        <h2>Course 1</h2>
-        <p>Coach: Coach Name</p>
-        <p>information about the course and coach.</p>
-        <button>Delete</button>
-    </div>
-    <div class="course-details">
-        <h2>Course 2</h2>
-        <p>Coach: Coach Name</p>
-        <p>information about the course and coach.</p>
-        <button>Delete</button>
-    </div>
-    <div class="course-details">
-        <h2>Course 3</h2>
-        <p>Coach: Coach Name</p>
-        <p>information about the course and coach.</p>
-        <button>Delete</button>
-    </div>
-    <div class="course-details">
-        <h2>Course 4</h2>
-        <p>Coach: Coach Name</p>
-        <p>information about the course and coach.</p>
-        <button>Delete</button>
-    </div>
-    <div class="course-details">
-        <h2>Course 5</h2>
-        <p>Coach: Coach Name</p>
-        <p>information about the course and coach.</p>
-        <button>Delete</button>
-    </div>
+    <form method="post" action="includes/cart.inc.php" class="action-buttons">
+        <button name="CT_delete_all">Delete All</button>
+        <button name="CT_Enroll">Enroll</button>
+    </form>
+    <?php display_ct_trainings() ?>
     <?php require "Footer.php" ?>
 </body>
 

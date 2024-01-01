@@ -6,9 +6,9 @@ function training_card($training)
     return '
         <div class="TP_Card">
             <div class="TP_Card_Upper">
-                <input type="text" name="" class="TP_Card_Title" value="' . $training['title'] . '">
+                <input type="text" class="TP_Card_Title" value="' . $training['title'] . '">
             </div>
-            <form class="TP_Card_Lower" action="includes/manage_trainings.inc.php" method="post">
+            <div class="TP_Card_Lower" >
                 <span class="TP_Card_Info">
                     <span class="TP_Card_Topics">
                         <p>Topics</p>
@@ -20,12 +20,16 @@ function training_card($training)
                     </span>
                 </span>
                 <span class="TP_Card_Enroll">
-                    <a href="contest.html" target="_blank" class="TP_Card_Button">
-                        <input class="TP_Card_Button" type="button" value="info">
-                    </a>
-                    <input class="TP_Card_Button" type="button" value="add to cart">
+                    <form action="includes/info.inc.php" method="post" class="TP_Card_Button_F">
+                        <input name="enter_info_button" class="TP_Card_Button" type="submit" value="info">
+                        <input type="text" name="training_title" style="display:none;" value="' . $training['title'] . '">
+                    </form>
+                    <form action="includes/cart.inc.php" method="post" class="TP_Card_Button_F">
+                        <input name="CT_add_button" class="TP_Card_Button" type="submit" value="add to cart">
+                        <input type="text" name="training_title" style="display:none;" value="' . $training['title'] . '">
+                    </form>
                 </span>
-            </form>
+            </div>
         </div>
     ';
 }

@@ -42,8 +42,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["user_isadmin"] = $result["isadmin"];
         $_SESSION["last_regeneration"] = time();
 
+        if ($_SESSION["user_isadmin"] == 0) {
+            header("Location: ../User_Profile.php?login=success");
+        } else {
+            header("Location: ../Admin_profile.php?login=success");
+        }
         // empty your resources
-        header("Location: ../User_profile.php?login=success");
         $pdo = null;
         $stmt = null;
         die();

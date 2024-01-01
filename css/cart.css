@@ -53,4 +53,21 @@ body {
   button:hover {
     background-color: #8CB3E3;
   }
-  
+  #CT_Tname{
+    background-color: rgba(red, green, blue, 0);
+    display: block;
+    border: none;
+    border-left: #1363C6;
+    border-left-style:solid;
+    border-left-width: 3px;
+    font-size: 35px;
+    margin-bottom: 3%;
+    padding-left: 15px;
+  }
+  #CT_Tinfo{
+    background-color: rgba(red, green, blue, 0);
+    display: block;
+    border: none;
+    font-size: 25px;
+    margin-bottom: 3%;
+  }

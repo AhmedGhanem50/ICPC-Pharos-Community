@@ -91,7 +91,7 @@
     align-items: center;
 }
 
-.TP_Card_Button {/*///////////////////////////////////////////////////////////////*/
+.TP_Card_Button_F {/*///////////////////////////////////////////////////////////////*/
     height: 60px;
     width: 40%;
     border-radius: 25px;
@@ -104,7 +104,15 @@
     text-decoration: none;
     font-size: 20px;
     text-wrap: wrap;
-
+}
+.TP_Card_Button {/*///////////////////////////////////////////////////////////////*/
+    height: 90%;
+    width: 90%;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background: #1363C6;
+    font-size: 20px;
 }
 
 .TP_Card_Button:hover {

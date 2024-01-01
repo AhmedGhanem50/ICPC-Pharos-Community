@@ -1,3 +1,7 @@
+<?php
+require_once "includes/info.inc.php";
+require_once "includes/info_view.inc.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,34 +10,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Course Page</title>
     <!-- essential links-->
-    <link rel="stylesheet" href="css\navbar.css">
-    <link rel="stylesheet" href="css\Footer.css">
-    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/Info.css">
 </head>
 
 <body>
     <?php require "navbar.php"; ?>
-    <div id="main-container">
-        <div id="course-info">
-            <div id="course-details">
-                <h1 id="course-name">traning Name1</h1>
-                <p>Coach: khalid</p>
-                <p id="course-info-text">Course Information: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p>Date of Download: January 31, 2023</p>
-            </div>
-            <div id="rectangle-section">
-                <p>Topics: HTML-CSS-JS</p>
-            </div>
-        </div>
-        <div id="sidebar">
-            <h1 id="course-name">traning Name 1</h1>
-            <a href="#" class="button" onclick="addCard()">Add Card</a>
-            <a href="#" class="button" onclick="showProblem()">Show Problem</a>
-        </div>
-    </div>
 
+    <div class="container">
+        <header>
+            <?php display_info_name() ?>
+        </header>
+        <div class="button-group">
+            <form id="add-to-cart" action="includes/cart.inc.php" method="post">
+                <button id="add-to-cart" name="CT_add_button">Add to cart</button>
+                <input type="text" name="training_title" style="display:none;" value="<?php display_info_name() ?>">
+            </form>
+            <form id="show-problems" action="includes/training_problems.inc.php" method="post">
+                <button id="show-problems" name="">Show problems</button>
+            </form>
+        </div>
+        <section>
+            <section class="topics">
+                <h2>Topics:</h2>
+                <div class="topic-list">
+                    <?php display_info_topics() ?>
+                </div>
+            </section>
+
+            <aside class="creator-details">
+                <h2>Details:</h2>
+                <div class="detail">
+                    Creator:
+                    <?php display_creator() ?>
+                </div>
+                <div class="detail">
+                    Creation date:
+                    <?php display_info_creation_date() ?>
+                </div>
+                <div class="detail">
+                    Number of topics:
+                    <?php display_info_number_topics() ?>
+                </div>
+            </aside>
+        </section>
+    </div>
     <?php require "Footer.php" ?>
+
 </body>
 
 </html>
