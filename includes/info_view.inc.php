@@ -1,5 +1,13 @@
 <?php
 declare(strict_types=1);
+
+function print_info_name()
+{
+    $training = $_SESSION["info_training_data"][0];
+    if (isset($_SESSION["info_training_data"]) && !empty($_SESSION["info_training_data"])) {
+        echo $training["title"];
+    }
+}
 function display_info_name()
 {
     $training = $_SESSION["info_training_data"][0];

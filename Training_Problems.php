@@ -1,3 +1,7 @@
+<?php
+require_once "includes/training_problems.inc.php";
+require_once "includes/training_problems_view.inc.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,27 +21,7 @@
         -Training name- problems
     </div>
     <div class="TPP_Page">
-        <div class="TPP_Card">
-            <p class="TPP_Card_Name">problem name problem name problem name problem name problem name
-                problem name problem name problem name </p>
-            <a href="problem link" target="_blank" class="TPP_Card_Button">
-                solve
-            </a>
-        </div>
-        <div class="TPP_Card">
-            <p class="TPP_Card_Name">problem name problem name problem name problem name problem name
-                problem name problem name problem name </p>
-            <a href="problem link" target="_blank" class="TPP_Card_Button">
-                solve
-            </a>
-        </div>
-        <div class="TPP_Card">
-            <p class="TPP_Card_Name">problem name problem name problem name problem name problem name
-                problem name problem name problem name </p>
-            <a href="problem link" target="_blank" class="TPP_Card_Button">
-                solve
-            </a>
-        </div>
+        <?php display_problems() ?>
     </div>
     <?php require "Footer.php" ?>
 </body>

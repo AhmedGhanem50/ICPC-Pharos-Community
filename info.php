@@ -24,11 +24,13 @@ require_once "includes/info_view.inc.php";
         </header>
         <div class="button-group">
             <form id="add-to-cart" action="includes/cart.inc.php" method="post">
-                <button id="add-to-cart" name="CT_add_button">Add to cart</button>
-                <input type="text" name="training_title" style="display:none;" value="<?php display_info_name() ?>">
+                <button name="CT_add_button">Add to cart</button>
+                <input type="text" name="training_title" style="display:none;" value="<?php print_info_name() ?>">
             </form>
             <form id="show-problems" action="includes/training_problems.inc.php" method="post">
-                <button id="show-problems" name="">Show problems</button>
+                <button name="show_problems">Show problems</button>
+                <input type="text" name="training_title" style="display:none;" value="<?php print_info_name() ?>">
+
             </form>
         </div>
         <section>
