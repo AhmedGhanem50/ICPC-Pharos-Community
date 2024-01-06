@@ -38,7 +38,7 @@ nav a {
     align-items: center;
 }
 
-.nav-bar ul {
+.navform {
     display: flex;
 }
 
@@ -46,8 +46,10 @@ nav a {
     display: none;
 }
 
-.nav-bar ul li a {
-
+.navbutton  {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #ffffff;
     padding: 10px 25px;
     font: size 20px;
     margin: 0 10px;
@@ -55,12 +57,14 @@ nav a {
     transition: 0.5s;
 }
 
-.nav-bar ul li a:hover {
+.navbutton:hover {
+        background-color: rgba(0, 0, 0, 0);
+            border: none;
     color: black;
     background: #F4F7FE;
 }
 
-.nav-bar ul li a.active {
+.navbutton.active {
     color: black;
     background: #F4F7FE;
 }
@@ -118,7 +122,7 @@ nav a {
         overflow: hidden;
     }
 
-    .nav-bar ul {
+    .navform {
         display: block;
         width: 100%;
         padding: 20px 0;
@@ -128,16 +132,17 @@ nav a {
         /* Add transition for smoother appearance */
     }
 
-    .nav-bar ul li a {
+    .navbutton{
         margin-bottom: 12px;
         display: block;
         padding: 10px 0;
         color: #F4F7FE;
         transition: 1s;
+
         /* Add transitions for color change */
     }
 
-    .nav-bar ul li a:hover {
+    .navbutton:hover {
         color: black;
         background: #F4F7FE;
     }

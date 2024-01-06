@@ -94,11 +94,6 @@ require_once "includes/profile_view.inc.php";
             </form>
         </div>
         <div class="account">
-            <form>
-                <button type="button" id="hiddenBtn">Hidden Button</button>
-            </form>
-        </div>
-        <div class="account">
             <form action="includes/logout.inc.php" method="post">
                 <button id="log-out">Log out</button>
                 <!-- Include similar structure for other fields... -->

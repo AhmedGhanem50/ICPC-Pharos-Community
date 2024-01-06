@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["user_codeforces"] = htmlspecialchars($result["codeforces"]);
         $_SESSION["user_gender"] = htmlspecialchars($result["gender"]);
         $_SESSION["user_puaid"] = htmlspecialchars($result["puaid"]);
-        $_SESSION["user_isadmin"] = $result["isadmin"];
+        $_SESSION["user_isadmin"] = htmlspecialchars($result["isadmin"]);
         $_SESSION["last_regeneration"] = time();
 
         if ($_SESSION["user_isadmin"] == 0) {

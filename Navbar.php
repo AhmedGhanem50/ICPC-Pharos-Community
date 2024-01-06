@@ -17,28 +17,23 @@ if (isset($_SESSION["user_username"])) {
         <div class="line"></div>
     </div>
     <div class="nav-bar">
-        <ul>
-            <li>
-                <a href="index.php">Home</a>
-            </li>
-            <li>
-                <a href="Trainings.php">Trainings </a>
-            </li>
-            <li>
-                <a href="About_Us_Page.php">About us</a>
-            </li>
-            <li>
-                <a href="User_Profile.php">My account</a>
-            </li>
-            <li>
-                <a href="cart.php"><i class="fa-solid fa-cart-shopping"></i></a>
-            </li>
-            <li>
-                <a href="login.php" class="active">
-                    <?php echo $log; ?>
-                </a>
-            </li>
-        </ul>
+        <form class="navform" method="post" action="includes/navigate.inc.php">
+            <button class="navbutton" name="home">
+                Home
+            </button>
+            <button class="navbutton" name="trainings">
+                Trainings
+            </button>
+            <button class="navbutton" name="about_us">
+                About us
+            </button>
+            <button class="navbutton" name="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="navbutton active" name="profile">
+                <?php echo $log; ?>
+            </button>
+        </form>
     </div>
 </nav>
 <script src="js\Navbar.js"></script>
