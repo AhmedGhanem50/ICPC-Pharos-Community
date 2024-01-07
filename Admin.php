@@ -47,6 +47,7 @@ require "includes/admin.inc.php";
                         </div>
                     </div>
                 </form>
+                <?php check_addTraining_errors() ?>
             </div>
             <div class="card-section">
                 <?php display_trainings_titles() ?>
@@ -58,6 +59,7 @@ require "includes/admin.inc.php";
                     <input name="added_admin_email" type="text" placeholder="Admin Email" />
                     <button name="add_admin_button">Make Admin</button>
                 </form>
+                <?php check_addAdmins_errors() ?>
             </div>
             <div class="card-section">
                 <?php display_admins_names() ?>

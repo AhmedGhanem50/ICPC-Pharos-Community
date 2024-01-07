@@ -31,6 +31,16 @@ function get_user(object $pdo, string $email)
     return $result;
 
 }
+function get_user_as_admin(object $pdo, string $email)
+{
+    $query = "SELECT username FROM users WHERE email = :email AND isadmin=1;";
+    $stmt = $pdo->prepare($query);
+    $stmt->bindParam(":email", $email);
+    $stmt->execute();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    return $result;
+
+}
 function get_training_id($pdo, $training_title)
 {
     $query = "SELECT id FROM trainings WHERE title = :training_title;";

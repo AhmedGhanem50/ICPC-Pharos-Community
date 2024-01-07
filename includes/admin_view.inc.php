@@ -54,3 +54,33 @@ function display_admins_names()
         echo admin_name_card($admin);
     }
 }
+function check_addAdmins_errors()
+{
+    if (isset($_SESSION["errors_add_admin"])) {
+        $errors = $_SESSION['errors_add_admin'];
+        echo "<br>";
+        foreach ($errors as $error) {
+            echo '<p style="color:red;font-size:16px;">' . $error . "</p>";
+        }
+        unset($_SESSION['errors_add_admin']);
+    } else if (isset($_GET['addadmin']) && $_GET['addadmin'] === "success") {
+        echo "<br>";
+        echo '<p style="color:green;font-size:16px;">Admin Added !! </p>';
+    }
+
+}
+function check_addTraining_errors()
+{
+    if (isset($_SESSION["errors_add_training"])) {
+        $errors = $_SESSION['errors_add_training'];
+        echo "<br>";
+        foreach ($errors as $error) {
+            echo '<p style="color:red;font-size:16px;">' . $error . "</p>";
+        }
+        unset($_SESSION['errors_add_training']);
+    } else if (isset($_GET['addtraining']) && $_GET['addtraining'] === "success") {
+        echo "<br>";
+        echo '<p style="color:green;font-size:16px;">Training Added !! </p>';
+    }
+
+}

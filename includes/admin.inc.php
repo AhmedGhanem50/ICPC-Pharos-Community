@@ -23,10 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $topics_titles = $_POST['topics_titles'];
             $errors = [];
             if (is_input_empty($title, $topics, $problems)) {
-                $errors["add_training_empty_input"] = "Fill in ALL fields!";
+                $errors["add_training_empty_input"] = "fill in all requiered field!!";
             }
             if (is_title_taken($pdo, $title)) {
-                $errors["taken_training_title"] = "taken training title entered!";
+                $errors["taken_training_title"] = "this training title is taken!!";
             }
             if ($errors) {
                 $_SESSION["errors_add_training"] = $errors;
@@ -51,6 +51,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
             if (!is_email_exist($pdo, $admin_email)) {
                 $errors["add_admin_invalid_email"] = "invalid email : user doesn't exist!!";
+            } else if (is_already_admin($pdo, $admin_email)) {
+                $errors["add_admin_invalid_email"] = "this user is an admin already!!";
             }
             if ($errors) {
                 $_SESSION["errors_add_admin"] = $errors;

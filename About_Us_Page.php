@@ -48,21 +48,14 @@
                         <span class="saprater">:</span>
                         <p>pharos, ALEX</p>
                     </li>
-                    <li>
-                        <span class="address-logo">
-                            <i class=" col fas fa-phone-alt"></i>
-                        </span>
-                        <p>Phone No</p>
-                        <span class="saprater">:</span>
-                        <p>+2012000000007</p>
-                    </li>
+
                     <li>
                         <span class="address-logo">
                             <i class="col fas fa-envelope"></i>
                         </span>
                         <p>Email ID</p>
                         <span class="saprater">:</span>
-                        <p>ICPC@gmail.com</p>
+                        <p>pua.icpc@gmail.com</p>
                     </li>
                 </ul>
             </div>

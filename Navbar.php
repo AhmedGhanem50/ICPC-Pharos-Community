@@ -9,7 +9,7 @@ if (isset($_SESSION["user_username"])) {
 ?>
 <nav>
     <div class="logo">
-        <a href="#"><img src="img\ICPC Logo no background.png" alt="logo">ICPC Pharos</a>
+        <a href="index.php"><img src="img\ICPC Logo no background.png" alt="logo">ICPC Pharos</a>
     </div>
     <div class="hamburger">
         <div class="line"></div>

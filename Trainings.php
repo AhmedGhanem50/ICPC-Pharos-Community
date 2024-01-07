@@ -15,16 +15,18 @@ require("includes/trainings.inc.php");
     <link rel="stylesheet" href="css\Trainings.css">
 </head>
 
-<body class="TP_Body">
+<body>
     <?php require "navbar.php"; ?>
-
-
-    <div class="TP_Tiltle">
-        ICPC Trainings
+    <div class="TP_Body">
+        <div class="TP_Tiltle">
+            ICPC Trainings
+        </div>
+        <div class="TP_Page">
+            <?php display_trainings(); ?>
+        </div>
     </div>
-    <div class="TP_Page">
-        <?php display_trainings(); ?>
-    </div>
+    <br>
+    <br>
     <?php require "Footer.php" ?>
 </body>
 

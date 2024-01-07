@@ -16,3 +16,7 @@ function is_email_exist(object $pdo, string $title)
 {
     return !empty(get_user($pdo, $title));
 }
+function is_already_admin(object $pdo, string $title)
+{
+    return !empty(get_user_as_admin($pdo, $title));
+}
