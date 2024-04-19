@@ -1,3 +1,1 @@
-# ICPC-Community
-
-## subtitle
+# ICPC-Pharos-Community
